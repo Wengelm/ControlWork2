@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane prefHeight="568.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#abd1f5" height="325.0" layoutX="389.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="299.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bbd9f5" height="325.0" layoutX="2.0" layoutY="2.0" stroke="BLACK" strokeType="INSIDE" width="307.0" />
+      <Button fx:id="add" layoutX="35.0" layoutY="295.0" mnemonicParsing="false" onAction="#insertButton" text="Добавить" />
+      <Button fx:id="update" layoutX="130.0" layoutY="295.0" mnemonicParsing="false" onAction="#updateButton" text="Обновить" />
+      <Button fx:id="del" layoutX="218.0" layoutY="295.0" mnemonicParsing="false" onAction="#deleteButton" text="Удалить" />
+      <Button  onAction="#calcRent" layoutX="484.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" text="Рассчитать" />
+      <TextField fx:id="yearTX" layoutX="118.0" layoutY="57.0" />
+      <TextField fx:id="proceedsTX" layoutX="118.0" layoutY="89.0" />
+      <TextField fx:id="proceedsBySellsTX" layoutX="118.0" layoutY="127.0" />
+      <TextField fx:id="profitTX" layoutX="118.0" layoutY="162.0" />
+      <TextField fx:id="profitBySellsTX" layoutX="118.0" layoutY="196.0" />
+      <TextField fx:id="capitalTX" layoutX="118.0" layoutY="232.0" />
+      <TextField fx:id="clearprofitTX" layoutX="118.0" layoutY="268.0" />
+      <TableView fx:id="rentabelTableView" layoutX="4.0" layoutY="345.0" onMouseClicked="#handle" prefHeight="200.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="41.0" text="Id" />
+          <TableColumn fx:id="proceeds" prefWidth="79.0" text="Выручка" />
+            <TableColumn fx:id="profitBySells" prefWidth="105.0" text="Прибыль до налогообложения" />
+            <TableColumn fx:id="profit" prefWidth="98.0" text="Прибыль от продаж" />
+            <TableColumn fx:id="capital" prefWidth="52.0" text="Капитал" />
+            <TableColumn fx:id="clearprofit" prefWidth="124.0" text="Чистая прибыль" />
+            <TableColumn fx:id="proceedsBySells" prefWidth="127.0" text="Выручка от продаж" />
+            <TableColumn fx:id="year" prefWidth="69.0" text="Год" />
+        </columns>
+      </TableView>
+      <TextField fx:id="rent1" layoutX="461.0" layoutY="57.0" />
+      <TextField fx:id="rent2" layoutX="461.0" layoutY="160.0" />
+      <TextField fx:id="rent3" layoutX="461.0" layoutY="107.0" />
+      <Label layoutX="46.0" layoutY="61.0" text="Год" />
+      <Label layoutX="37.0" layoutY="95.0" text="Выручка" />
+      <Label layoutX="1.0" layoutY="131.0" text="Выручка от продаж" />
+      <Label layoutX="27.0" layoutY="152.0" text="Прибыль до" />
+      <Label layoutX="5.0" layoutY="200.0" text="Прибыль от продаж" />
+      <Label layoutX="41.0" layoutY="236.0" text="Капитал" />
+      <Label layoutX="16.0" layoutY="272.0" text="Чистая прибыль" />
+      <Label layoutX="431.0" layoutY="36.0" text="Коэффициент общей рентабельности" />
+      <Label layoutX="432.0" layoutY="86.0" text="Коэффициент рентабельности продаж" />
+      <Label layoutX="432.0" layoutY="134.0" text="Коэффициент рентабельности активов" />
+      <Label layoutX="414.0" layoutY="15.0" text="Калькулято коээфициентов рентабельности" />
+      <Label layoutX="130.0" layoutY="6.0" text="Данные" />
+      <Label layoutX="9.0" layoutY="166.0" text=" налогообложения" />
+      <TextField fx:id="idTX" layoutX="118.0" layoutY="23.0" />
+      <Label layoutX="50.0" layoutY="27.0" text="ID" />
+   </children>
+</AnchorPane>
